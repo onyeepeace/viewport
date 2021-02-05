@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Viewport</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form class="input">
+                <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    value=""
+                    placeholder="include http://"
+                />
+                <button id="click" type="submit">View</button>
+            </form>
+
+            <form>
+                <label for="viewport">Choose a viewport</label>
+                <select name="viewport" id="view">
+                    <option value="">select</option>
+                    <option value="mobile" id="mobile">mobile</option>
+                    <option value="tablet" id="tablet">tablet</option>
+                    <option value="laptop" id="laptop">laptop</option>
+                    <option value="desktop" id="desktop">desktop</option>
+                    <option value="grouped" id="grouped">grouped</option>
+                </select>
+            </form>
+
+            <div class="view">
+                <div id="mobileView">
+                    <div class="singleMobile">
+                        <iframe src="" id="singleMobile"></iframe>
+                    </div>
+                </div>
+                <div id="tabletView">
+                    <div class="singleTablet">
+                        <iframe src="" id="singleTablet"></iframe>
+                    </div>
+                </div>
+                <div id="laptopView">
+                    <div class="singleLaptop">
+                        <iframe src="" id="singleLaptop"></iframe>
+                    </div>
+                </div>
+                <div id="desktopView">
+                    <div class="singleDesktop">
+                        <iframe src="" id="singleDesktop"></iframe>
+                    </div>
+                </div>
+
+                <div id="groupedView">
+                    <div class="mobile">
+                        <iframe src="" id="mobile"></iframe>
+                    </div>
+
+                    <div class="tablet">
+                        <iframe src="" id="tablet"></iframe>
+                    </div>
+
+                    <div class="laptop">
+                        <iframe src="" id="laptop"></iframe>
+                    </div>
+
+                    <div class="desktop">
+                        <iframe src="" id="desktop"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
